@@ -37,7 +37,7 @@ _pure_set_default pure_color_ssh_user_normal pure_color_mute
 _pure_set_default pure_color_ssh_user_root pure_color_light
 
 # Number of running jobs
-_pure_set_default pure_show_jobs false
+_pure_set_default pure_show_jobs true
 _pure_set_default pure_color_jobs pure_color_normal
 
 # Virtualenv for Python
