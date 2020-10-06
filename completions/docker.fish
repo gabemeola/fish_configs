@@ -311,7 +311,7 @@ complete -c docker -A -f -n '__fish_seen_subcommand_from history' -l format -d '
 complete -c docker -A -f -n '__fish_seen_subcommand_from history' -l help -d 'Print usage'
 complete -c docker -A -f -n '__fish_seen_subcommand_from history' -s H -l human -d 'Print sizes and dates in human readable format'
 complete -c docker -A -f -n '__fish_seen_subcommand_from history' -l no-trunc -d "Don't truncate output"
-complete -c docker -A -f -n '__fish_seen_subcommand_from history' -s q -l quiet -d 'Only show numeric IDs'
+complete -c docker -A -f -n '__fish_seen_subcommand_from history' -s q -l quiet -d 'Only show image IDs'
 complete -c docker -A -f -n '__fish_seen_subcommand_from history' -a '(__fish_print_docker_images)' -d "Image"
 
 # images
@@ -322,7 +322,7 @@ complete -c docker -A -f -n '__fish_seen_subcommand_from images' -s f -l filter 
 complete -c docker -A -f -n '__fish_seen_subcommand_from images' -l format -d 'Pretty-print images using a Go template'
 complete -c docker -A -f -n '__fish_seen_subcommand_from images' -l help -d 'Print usage'
 complete -c docker -A -f -n '__fish_seen_subcommand_from images' -l no-trunc -d "Don't truncate output"
-complete -c docker -A -f -n '__fish_seen_subcommand_from images' -s q -l quiet -d 'Only show numeric IDs'
+complete -c docker -A -f -n '__fish_seen_subcommand_from images' -s q -l quiet -d 'Only show image IDs'
 complete -c docker -A -f -n '__fish_seen_subcommand_from images' -a '(__fish_print_docker_repositories)' -d "Repository"
 
 # import
@@ -373,7 +373,7 @@ complete -c docker -A -f -n '__fish_seen_subcommand_from logs' -s f -l follow -d
 complete -c docker -A -f -n '__fish_seen_subcommand_from logs' -l help -d 'Print usage'
 complete -c docker -A -f -n '__fish_seen_subcommand_from logs' -s t -l timestamps -d 'Show timestamps'
 complete -c docker -A -f -n '__fish_seen_subcommand_from logs' -l since -d 'Show logs since timestamp'
-complete -c docker -A -f -n '__fish_seen_subcommand_from logs' -l tail -d 'Output the specified number of lines at the end of logs (defaults to all logs)'
+complete -c docker -A -f -n '__fish_seen_subcommand_from logs' -s n -l tail -d 'Output the specified number of lines at the end of logs (defaults to all logs)'
 complete -c docker -A -f -n '__fish_seen_subcommand_from logs' -a '(__fish_print_docker_containers running)' -d "Container"
 
 # network
@@ -409,7 +409,7 @@ complete -c docker -A -f -n '__fish_seen_subcommand_from ps' -l help -d 'Print u
 complete -c docker -A -f -n '__fish_seen_subcommand_from ps' -s l -l latest -d 'Show only the latest created container, include non-running ones.'
 complete -c docker -A -f -n '__fish_seen_subcommand_from ps' -s n -d 'Show n last created containers, include non-running ones.'
 complete -c docker -A -f -n '__fish_seen_subcommand_from ps' -l no-trunc -d "Don't truncate output"
-complete -c docker -A -f -n '__fish_seen_subcommand_from ps' -s q -l quiet -d 'Only display numeric IDs'
+complete -c docker -A -f -n '__fish_seen_subcommand_from ps' -s q -l quiet -d 'Only display container IDs'
 complete -c docker -A -f -n '__fish_seen_subcommand_from ps' -s s -l size -d 'Display total file sizes'
 complete -c docker -A -f -n '__fish_seen_subcommand_from ps' -l since -d 'Show only containers created since Id or Name, include non-running ones.'
 
