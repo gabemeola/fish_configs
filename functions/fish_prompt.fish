@@ -1,9 +1,9 @@
+# a called to `_pure_prompt_new_line` is triggered by an event
 function fish_prompt
     set --local exit_code $status  # save previous exit code
 
-    set SPACE ""
     echo -e -n (_pure_prompt_beginning)  # init prompt context (clear current line, etc.)
-    echo -e -n (_pure_prompt_first_line) $SPACE  # print current path, git branch/status, command duration
+    _pure_print_prompt_rows # manage default vs. compact prompt
     _pure_place_iterm2_prompt_mark # place iTerm shell integration mark
     echo -e -n (_pure_prompt $exit_code)  # print prompt
     echo -e (_pure_prompt_ending)  # reset colors and end prompt
