@@ -12,5 +12,6 @@ function fish_title \
         set prompt "$current_folder $pure_symbol_title_bar_separator $current_command"
     end
 
-    echo $prompt
+    # echo $prompt
+    echo $basename
 end
