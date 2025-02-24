@@ -1,1 +1,0 @@
-/opt/homebrew/share/fish/vendor_completions.d/ghostty.fish
