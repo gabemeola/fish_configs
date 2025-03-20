@@ -2,6 +2,11 @@
 if test -f ~/.profile
     bass source ~/.profile;
 end
+
+# Git async prompt
+# https://github.com/pure-fish/pure/wiki/Async-git-Prompt
+set -g async_prompt_functions _pure_prompt_git
+
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH

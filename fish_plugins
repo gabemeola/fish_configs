@@ -3,3 +3,4 @@ brgmnn/fish-docker-compose
 evanlucas/fish-kubectl-completions
 rafaelrinaldi/pure
 edc/bass
+acomagu/fish-async-prompt
