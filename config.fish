@@ -1,3 +1,8 @@
+# Source local fish if exists
+if test -f ~/.config/fish/local.fish
+    source ~/.config/fish/local.fish;
+end
+
 # Source .profile if exists
 if test -f ~/.profile
     bass source ~/.profile;
@@ -24,10 +29,4 @@ end
 
 if test -d (brew --prefix)"/share/fish/vendor_completions.d"
     set -p fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
-end
-
-
-# Source local fish if exists
-if test -f ~/.config/fish/local.fish
-    source ~/.config/fish/local.fish;
 end
